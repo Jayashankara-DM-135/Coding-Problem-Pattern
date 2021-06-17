@@ -1,6 +1,16 @@
 Algorithm Tips:
 
-1> The algorithm is a standard binary search for sorted matrix:
+1> Finding mid for Binary search:
+a> Works fine for Python. Since does not have any interger overflow as such.
+But it might give problem in c++ and Java.
+mid = (start + end) // 2
+
+b> Below formuala works most widely used one.
+mid = start + ((end - start) // 2)
+
+=========================================
+
+2> Binary search for sorted matrix:
 Note: For calacuting row and colums, use cloum size (n in m*n, where m = no. rows
  and n = no colums)
 Code:
@@ -18,7 +28,7 @@ Code:
                         left = pivot_idx + 1
         return False
 ===================================================
-2> Search in Sorted Rotated array:
+3> Search in Sorted Rotated array:
    a> Find mid and compare with key
    b> Since only one elemement arr[i] having a[i] < a[i-1] property in sorted rotated array
       and rest of elements a[i] > a[i-1]
