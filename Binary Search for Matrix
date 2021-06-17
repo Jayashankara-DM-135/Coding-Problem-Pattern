@@ -1,6 +1,7 @@
 Algorithm:
 
 The algorithm is a standard binary search for sorted matrix:
+===================================================
 1> Code:
 
         left, right = 0, m * n - 1
