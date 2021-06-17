@@ -56,9 +56,18 @@ code:
         return -1
 =========================================================
 
+4> Finding minimum in Rotated sorted array:
 
+Algorithm:
 
+Find the mid element of the array.
+if arr[mid] > arr[mid+1]: return arr[mid+1]
+otherwise
+If mid element > first element of array this means that we need to look for the inflection(smallest value) point on the right of mid.
 
+If mid element < first element of array this that we need to look for the inflection point on the left of mid.
+
+=======================================================
 
 
 
