@@ -120,5 +120,54 @@ Code:
         while low <= high:
            //Binary search code
 =========================================
+6 > Peak Index in a Mountain Array:
+
+Let's call an array arr a mountain if the following properties hold:
+
+arr.length >= 3
+There exists some i with 0 < i < arr.length - 1 such that:
+arr[0] < arr[1] < ... arr[i-1] < arr[i] and
+arr[i] > arr[i+1] > ... > arr[arr.length - 1]
+
+Code:
+        low = 0
+        high = len(arr) - 1
+
+        while low < high:
+            mid = low + (high - low) // 2
+
+            if arr[mid] > arr[mid+1]:
+                high = mid
+            else:
+                low = mid + 1
+
+        return low
+
+====================================
+7> Given a characters array letters that is sorted in non-decreasing order and
+a character target, return the smallest character in the array that is larger than
+target.
+
+Note that the letters wrap around.
+For example, if target == 'z' and letters == ['a', 'b'], the answer is 'a'
+
+code:
+
+def search_next_letter(letters, key):
+  n = len(letters)
+  if key < letters[0] or key > letters[n - 1]:
+    return letters[0]
+
+  start, end = 0, n - 1
+  while start <= end:
+    mid = start + (end - start) // 2
+    if key < letters[mid]:
+      end = mid - 1
+    else: # key >= letters[mid]:
+      start = mid + 1
+
+
+  return letters[start % n]
+
 
 
