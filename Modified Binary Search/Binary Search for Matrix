@@ -67,6 +67,23 @@ If mid element > first element of array this means that we need to look for the 
 
 If mid element < first element of array this that we need to look for the inflection point on the left of mid.
 
+Code:
+        start = 0
+        end = len(nums) - 1
+
+        while start < end:
+            mid = start + ((end - start) // 2)
+
+            if nums[mid] > nums[mid +1]:
+                return nums[mid + 1]
+
+            if nums[mid] < nums[end]:
+                end = mid
+            else:
+                start = mid + 1
+
+        return nums[start]
+
 =======================================================
 
 
