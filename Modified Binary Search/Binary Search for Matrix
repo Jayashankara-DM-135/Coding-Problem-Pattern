@@ -1,4 +1,4 @@
-Algorithm Tips:
+Algorithm Tips for Modified Binaray search.
 
 1> Finding mid for Binary search:
 a> Works fine for Python. Since does not have any interger overflow as such.
