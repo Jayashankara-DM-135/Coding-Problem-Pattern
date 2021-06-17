@@ -85,6 +85,40 @@ Code:
         return nums[start]
 
 =======================================================
+5> Search in a Sorted Array of Unknown Size:
 
+This problem involues two step:
+1> First find boundary in which given key is present, then
+2> Do Binary search
+
+Algorithm
+----------
+1> Define boundaries:
+
+Initiate left = 0 and right = 1.
+
+While target is on the right to the right boundary: reader.get(right) < target:
+
+Set left boundary equal to the right one: left = right + 1.
+
+Extend right boundary: right = (right - left) * 2 + high + 1 .
+
+Note: To speed up, use right shift operator (x << 1)instead of multiplication.
+
+Now the target is between left and right boundaries.
+
+Code:
+        low = 0
+        high = 1
+
+        while target > reader.get(high):
+            newlow = high + 1
+            high = (high - low) * 2 + high + 1
+            low = newlow
+            print(low, high)
+
+        while low <= high:
+           //Binary search code
+=========================================
 
 
