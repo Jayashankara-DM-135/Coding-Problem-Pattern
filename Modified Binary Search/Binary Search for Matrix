@@ -88,12 +88,12 @@ Code:
 5> Search in a Sorted Array of Unknown Size:
 
 This problem involues two step:
-1> First find boundary in which given key is present, then
-2> Do Binary search
+a> First find boundary in which given key is present, then
+b> Do Binary search
 
 Algorithm
 ----------
-1> Define boundaries:
+a> Define boundaries:
 
 Initiate left = 0 and right = 1.
 
