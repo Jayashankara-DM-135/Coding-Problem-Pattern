@@ -38,3 +38,13 @@ def main():
 
 
 main()
+
+
+===================
+Complexcity:
+The above algorithm’s time complexity is exponential O(2^n), where ‘n’ represents the total number of items.
+since for each element we have two choice(select and not to select) hence time complexity is exponential O(2^n).
+
+
+The space complexity is O(n). This space will be used to store the recursion stack. Since our recursive algorithm works in a depth-first fashion, 
+which means, we can’t have more than ‘n’ recursive calls on the call stack at any time.
