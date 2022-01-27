@@ -17,7 +17,7 @@ Code:
 
         left, right = 0, m * n - 1
         while left <= right:
-                pivot_idx = (left + (right - left)) // 2
+                pivot_idx = left + (right - left // 2)
                 pivot_element = matrix[pivot_idx // n][pivot_idx % n]
                 if target == pivot_element:
                     return True
