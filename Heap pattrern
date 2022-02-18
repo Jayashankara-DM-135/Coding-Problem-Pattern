@@ -18,5 +18,7 @@ Note:
 1> By default it's min heap, Means heap[0] is smallest element then all other element in heap.
 2> For max heap insert  item with negative sign , after poping change the sign.
 3> To create a heap from existing list use min_heap = heapify(mylist)
+4> if kth smallest is ask then, use Max heap
+5> if kth largest is the ask, then use min heap
 
 
