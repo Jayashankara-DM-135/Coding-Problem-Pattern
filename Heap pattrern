@@ -21,4 +21,10 @@ Note:
 4> if kth smallest is ask then, use Max heap
 5> if kth largest is the ask, then use min heap
 
+=====================
+Complexcity:
+nlognk : k elements 
+
+Inseration: logn , where n height of complete binaray tree
+
 
